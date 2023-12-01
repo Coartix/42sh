@@ -1,0 +1,13 @@
+if
+
+
+/bin/true
+
+
+then
+
+
+/bin/echo newline
+
+
+fi

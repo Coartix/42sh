@@ -1,0 +1,4 @@
+if /bin/true; then
+	/bin/echo The writting was on the wall
+fi
+/bin/echo moue

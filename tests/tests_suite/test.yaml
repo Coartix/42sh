@@ -1,0 +1,733 @@
+name: Test - Just for love
+cmd: builddir/42sh tests/tests_suite/files_sh/file_2.sh
+stdout: "coucou\n"
+---
+name: Test - all on the same line - 1 - FILE_3
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_3) <(sh tests/tests_suite/files_sh/file_3)"
+---
+name: Test - Simple echo - FILE_4
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_4.sh) <(sh tests/tests_suite/files_sh/file_4.sh)"
+---
+name: Test - Simple echo - FILE_5
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_5.sh) <(sh tests/tests_suite/files_sh/file_5.sh)"
+---
+name: Test - Simple Echo - FILE_6
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_6.sh) <(sh tests/tests_suite/files_sh/file_6.sh)"
+---
+name: Test - Simple Echo - FILE_7
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_7.sh) <(sh tests/tests_suite/files_sh/file_7.sh)"
+---
+name: Test - Simple Echo - FILE_8
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_8.sh) <(sh tests/tests_suite/files_sh/file_8.sh)"
+---
+name: Test - Simple Echo - FILE_9
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_9.sh) <(sh tests/tests_suite/files_sh/file_9.sh)"
+---
+name: Test - Simple Echo - FILE_10
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_10.sh) <(sh tests/tests_suite/files_sh/file_10.sh)"
+---
+name: Test - Simple Echo - FILE_11
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_11.sh) <(sh tests/tests_suite/files_sh/file_11.sh)"
+---
+name: Test - Quotes Echo - FILE_12
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_12.sh) <(sh tests/tests_suite/files_sh/file_12.sh)"
+---
+name: Test - Quotes Echo - FILE_13
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_13.sh) <(sh tests/tests_suite/files_sh/file_13.sh)"
+---
+name: Test - Quotes Echo - FILE_14
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_14.sh) <(bash tests/tests_suite/files_sh/file_14.sh)"
+---
+name: Test - Args Echo - FILE_15
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_15.sh) <(sh tests/tests_suite/files_sh/file_15.sh)"
+---
+name: Test - Args Echo - FILE_16
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_16.sh) <(sh tests/tests_suite/files_sh/file_16.sh)"
+---
+name: Test - Args Echo - FILE_17
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_17.sh) <(sh tests/tests_suite/files_sh/file_17.sh)"
+---
+name: Test - Args Echo - FILE_18
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_18.sh) <(sh tests/tests_suite/files_sh/file_18.sh)"
+---
+name: Test - Args Echo - FILE_19
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_19.sh) <(sh tests/tests_suite/files_sh/file_19.sh)"
+---
+name: Test - Args Echo - FILE_20
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_20.sh) <(sh tests/tests_suite/files_sh/file_20.sh)"
+---
+name: Test - Args Echo - FILE_21
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_21.sh) <(sh tests/tests_suite/files_sh/file_21.sh)"
+---
+name: Test - Args Quotes Echo - FILE_22
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_22.sh) <(sh tests/tests_suite/files_sh/file_22.sh)"
+---
+name: Test - Args Quotes Echo - FILE_23
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_23.sh) <(sh tests/tests_suite/files_sh/file_23.sh)"
+---
+name: Test - Args Quotes Echo - FILE_24
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_24.sh) <(sh tests/tests_suite/files_sh/file_24.sh)"
+---
+name: Test - Args Quotes Echo - FILE_25
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_25.sh) <(sh tests/tests_suite/files_sh/file_25.sh)"
+---
+name: Test - Args Quotes Echo - FILE_26
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_26.sh) <(sh tests/tests_suite/files_sh/file_26.sh)"
+---
+name: Test - Args Quotes Echo - FILE_27
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_27.sh) <(sh tests/tests_suite/files_sh/file_27.sh)"
+---
+name: Test - Args Quotes Echo - FILE_28
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_28.sh) <(sh tests/tests_suite/files_sh/file_28.sh)"
+---
+name: Test - Multiple Echo - FILE_29
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_29.sh) <(sh tests/tests_suite/files_sh/file_29.sh)"
+---
+name: Test - Multiple Echo - FILE_30
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_30.sh) <(sh tests/tests_suite/files_sh/file_30.sh)"
+---
+name: Test - Multiple Echo - FILE_31
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_31.sh) <(sh tests/tests_suite/files_sh/file_31.sh)"
+---
+name: Test - Multiple Echo - FILE_32
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_32.sh) <(sh tests/tests_suite/files_sh/file_32.sh)"
+---
+name: Test - Multiple Echo - FILE_33
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_33.sh) <(sh tests/tests_suite/files_sh/file_33.sh)"
+---
+name: Test - Multiple Echo - FILE_34
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_34.sh) <(sh tests/tests_suite/files_sh/file_34.sh)"
+---
+name: Test - Multiple Echo - FILE_35
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_35.sh) <(sh tests/tests_suite/files_sh/file_35.sh)"
+---
+name: Test - Multiple Args Echo - FILE_36
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_36.sh) <(sh tests/tests_suite/files_sh/file_36.sh)"
+---
+name: Test - Multiple Args Echo - FILE_37
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_37.sh) <(sh tests/tests_suite/files_sh/file_37.sh)"
+---
+name: Test - Multiple Args Echo - FILE_38
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_38.sh) <(sh tests/tests_suite/files_sh/file_38.sh)"
+---
+name: Test - Multiple Args Echo - FILE_39
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_39.sh) <(sh tests/tests_suite/files_sh/file_39.sh)"
+---
+name: Test - Quotes Echo - FILE_61
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_61.sh) <(sh tests/tests_suite/files_sh/file_61.sh)"
+---
+name: Test - Quotes Echo - FILE_62
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_62.sh) <(sh tests/tests_suite/files_sh/file_62.sh)"
+---
+name: Test - Quote Backslash - FILE_63
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_63.sh) <(sh tests/tests_suite/files_sh/file_63.sh)"
+---
+name: Test - backslash before quote - FILE_64
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_64.sh) <(sh tests/tests_suite/files_sh/file_64.sh)"
+---
+name: Test - backslash newline - FILE_65
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_65.sh) <(sh tests/tests_suite/files_sh/file_65.sh)"
+---
+name: Test - echo -n test - FILE_66
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_66.sh) <(sh tests/tests_suite/files_sh/file_66.sh)"
+---
+name: Test - arg -e - FILE_67
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_67.sh) <(bash tests/tests_suite/files_sh/file_67.sh)"
+---
+name: Test - mutliple args - FILE_68
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_68.sh) <(bash tests/tests_suite/files_sh/file_68.sh)"
+---
+name: Test - backslash_at_end - FILE_69
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_69.sh) <(sh tests/tests_suite/files_sh/file_69.sh)"
+---
+name: Test - backslash_at_end - FILE_70
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_70.sh) <(sh tests/tests_suite/files_sh/file_70.sh)"
+---
+name: Test - backslash_at_end - FILE_71
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_71.sh) <(sh tests/tests_suite/files_sh/file_71.sh)"
+stderr: "ls: cannot access ' ': No such file or directory\nls: cannot access ' ': No such file or directory\n"
+---
+name: Test - backslash_at_end - FILE_72
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_72.sh) <(sh tests/tests_suite/files_sh/file_72.sh)"
+stderr: "ls: cannot access 'oui\\': No such file or directory\nls: cannot access 'oui\\': No such file or directory\n"
+---
+name: Test - backslash_at_end - FILE_73
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_73.sh) <(sh tests/tests_suite/files_sh/file_73.sh)"
+---
+name: Test - backslash_at_end - FILE_74
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_74.sh) <(sh tests/tests_suite/files_sh/file_74.sh)"
+stderr: "ls: cannot access '\\oui\\': No such file or directory\nls: cannot access '\\oui\\': No such file or directory\n"
+---
+name: Test - -e_-n_echo - FILE_75
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_75.sh) <(bash tests/tests_suite/files_sh/file_75.sh)"
+---
+name: Test - echo_-n - FILE_76
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_76.sh) <(sh tests/tests_suite/files_sh/file_76.sh)"
+---
+name: Test - echo_-e - FILE_77
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_77.sh) <(bash tests/tests_suite/files_sh/file_77.sh)"
+---
+name: Test - echo_hard1 - FILE_78
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_78.sh) <(sh tests/tests_suite/files_sh/file_78.sh)"
+---
+name: Test - echo_hard2 - FILE_79
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_79.sh) <(sh tests/tests_suite/files_sh/file_79.sh)"
+---
+name: Test - failed_command - FILE_80
+cmd: builddir/42sh tests/tests_suite/files_sh/file_80.sh
+stderr: "42sh: failed to exec command: No such file or directory\n"
+status: 127
+
+---
+name: Test - syntax_error - FILE_81
+cmd: builddir/42sh tests/tests_suite/files_sh/file_81.sh
+stderr: "Syntax error\n"
+status: 2
+---
+name: Test - syntax_error - FILE_82
+cmd: builddir/42sh tests/tests_suite/files_sh/file_82.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_83
+cmd: builddir/42sh tests/tests_suite/files_sh/file_83.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_84
+cmd: builddir/42sh tests/tests_suite/files_sh/file_84.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_85
+cmd: builddir/42sh tests/tests_suite/files_sh/file_85.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_86
+cmd: builddir/42sh tests/tests_suite/files_sh/file_86.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_87
+cmd: builddir/42sh tests/tests_suite/files_sh/file_87.sh
+stderr: "Syntax error\n"
+status: 2
+---
+name : Test - syntax_error - FILE_88
+cmd: builddir/42sh tests/tests_suite/files_sh/file_88.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - syntax_error - FILE_89
+cmd: builddir/42sh tests/tests_suite/files_sh/file_89.sh
+stderr: "Syntax error\n"
+status: 2
+
+---
+name : Test - if - FILE_90
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_90.sh) <(sh tests/tests_suite/files_sh/file_90.sh)"
+---
+name : Test - if - FILE_91
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_91.sh) <(sh tests/tests_suite/files_sh/file_91.sh)"
+---
+name : Test - if - FILE_92
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_92.sh) <(sh tests/tests_suite/files_sh/file_92.sh)"
+---
+name : Test - if_else - FILE_93
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_93.sh) <(sh tests/tests_suite/files_sh/file_93.sh)"
+---
+name : Test - if_else - FILE_94
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_94.sh) <(sh tests/tests_suite/files_sh/file_94.sh)"
+---
+name : Test - if_else - FILE_95
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_95.sh) <(sh tests/tests_suite/files_sh/file_95.sh)"
+---
+name : Test - if_else - FILE_96
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_96.sh) <(sh tests/tests_suite/files_sh/file_96.sh)"
+---
+name : Test - if_else - FILE_97
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_97.sh) <(sh tests/tests_suite/files_sh/file_97.sh)"
+---
+name : Test - if_else - FILE_98
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_98.sh) <(sh tests/tests_suite/files_sh/file_98.sh)"
+---
+name : Test - if - FILE_99
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_99.sh) <(sh tests/tests_suite/files_sh/file_99.sh)"
+---
+name : Test - if_else - FILE_100
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_100.sh) <(sh tests/tests_suite/files_sh/file_100.sh)"
+---
+name : Test - echo_E_option_strong_quoting - FILE_102
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_102.sh) <(bash tests/tests_suite/files_sh/file_102.sh)"
+---
+name : Test - echo_e_option_random_dash - FILE_103
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_103.sh) <(sh tests/tests_suite/files_sh/file_103.sh)"
+
+---
+name : Test - echo_bad_option2 - FILE_104
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_104.sh) <(sh tests/tests_suite/files_sh/file_104.sh)"
+---
+name : Test - echo_whitespaces - FILE_105
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_105.sh) <(sh tests/tests_suite/files_sh/file_105.sh)"
+---
+name : Test - echo_n_option - FILE_106
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_106.sh) <(sh tests/tests_suite/files_sh/file_106.sh)"
+---
+name : Test - echo_multiple_options3 - FILE_107
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_107.sh) <(bash tests/tests_suite/files_sh/file_107.sh)"
+---
+name : Test - echo_big_arg - FILE_108
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_108.sh) <(sh tests/tests_suite/files_sh/file_108.sh)"
+
+---
+name : Test - echo_e_option1 - FILE_109
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_109.sh) <(bash tests/tests_suite/files_sh/file_109.sh)"
+
+---
+name : Test - echo_bad_option4 - FILE_110
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_110.sh) <(sh tests/tests_suite/files_sh/file_110.sh)"
+---
+name : Test - echo_multiple_options2 - FILE_111
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_111.sh) <(bash tests/tests_suite/files_sh/file_111.sh)"
+
+---
+name : Test - echo_E_option1 - FILE_112
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_112.sh) <(bash tests/tests_suite/files_sh/file_112.sh)"
+
+---
+name : Test - echo_e_option_strong_quoting - FILE_113
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_113.sh) <(bash tests/tests_suite/files_sh/file_113.sh)"
+
+---
+name : Test - echo_e_option_backslash1 - FILE_114
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_114.sh) <(bash tests/tests_suite/files_sh/file_114.sh)"
+
+---
+name : Test - echo_multiple_options1 - FILE_115
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_115.sh) <(bash tests/tests_suite/files_sh/file_115.sh)"
+
+---
+name : Test - echo_bad_option3 - FILE_116
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_116.sh) <(bash tests/tests_suite/files_sh/file_116.sh)"
+
+---
+name : Test - echo_multiple_args - FILE_117
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_117.sh) <(sh tests/tests_suite/files_sh/file_117.sh)"
+---
+name : Test - echo_bad_option1 - FILE_118
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_118.sh) <(sh tests/tests_suite/files_sh/file_118.sh)"
+---
+name : Test - echo_E_option4 - FILE_119
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_119.sh) <(bash tests/tests_suite/files_sh/file_119.sh)"
+---
+name : Test - echo_e_option_no_arg - FILE_120
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_120.sh) <(bash tests/tests_suite/files_sh/file_120.sh)"
+
+---
+name : Test - echo_e_option_backslash2 - FILE_121
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_121.sh) <(bash tests/tests_suite/files_sh/file_121.sh)"
+
+---
+name : Test - echo_bad_option2 - FILE_122
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_122.sh) <(sh tests/tests_suite/files_sh/file_122.sh)"
+---
+name : Test - echo_multiple_options3 - FILE_123
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_123.sh) <(bash tests/tests_suite/files_sh/file_123.sh)"
+---
+name : Test - echo_bad_option4 - FILE_124
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_124.sh) <(bash tests/tests_suite/files_sh/file_124.sh)"
+
+---
+name : Test - echo_e_option_strong_quoting - FILE_125
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_125.sh) <(bash tests/tests_suite/files_sh/file_125.sh)"
+
+---
+name : Test - echo_e_option_strong_quoting - FILE_126
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_126.sh) <(bash tests/tests_suite/files_sh/file_126.sh)"
+
+---
+name : Test - echo_e_option_backslash1 - FILE_127
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_127.sh) <(bash tests/tests_suite/files_sh/file_127.sh)"
+
+---
+name : Test - echo_multiple_options1 - FILE_128
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_128.sh) <(bash tests/tests_suite/files_sh/file_128.sh)"
+
+---
+name : Test - echo_multiple_options1 - FILE_129
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_129.sh) <(bash tests/tests_suite/files_sh/file_129.sh)"
+
+---
+name : Test - echo_bad_option3 - FILE_130
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_130.sh) <(sh tests/tests_suite/files_sh/file_130.sh)"
+---
+name : Test - echo_bad_option1 - FILE_131
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_131.sh) <(sh tests/tests_suite/files_sh/file_131.sh)"
+---
+name : Test - echo_e_option_no_arg - FILE_132
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_132.sh) <(bash tests/tests_suite/files_sh/file_132.sh)"
+
+---
+name : Test - echo_e_option_backslash2 - FILE_133
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_133.sh) <(bash tests/tests_suite/files_sh/file_133.sh)"
+
+---
+name : Test - echo_E_option_strong_quoting - FILE_134
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_134.sh) <(bash tests/tests_suite/files_sh/file_134.sh)"
+
+---
+name : Test - echo_E_option_strong_quoting - FILE_135
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_135.sh) <(bash tests/tests_suite/files_sh/file_135.sh)"
+---
+name : Test - echo_e_option_backslash2 - FILE_136
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_136) <(bash tests/tests_suite/files_sh/file_136)"
+
+--- #Tests with -c
+name: Test - all on the same line - 1 -C ARG -- FILE_3
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_3") <(sh -c "tests/tests_suite/files_sh/file_3")"
+---
+name: Test - Simple echo -C ARG -- FILE_4
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_4.sh") <(sh -c "tests/tests_suite/files_sh/file_4.sh")"
+---
+name: Test - Simple echo -C ARG -- FILE_5
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_5.sh") <(sh -c "tests/tests_suite/files_sh/file_5.sh")"
+---
+name: Test - Simple Echo -C ARG -- FILE_6
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_6.sh") <(sh -c "tests/tests_suite/files_sh/file_6.sh")"
+---
+name: Test - Simple Echo -C ARG -- FILE_7
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_7.sh") <(sh -c "tests/tests_suite/files_sh/file_7.sh")"
+---
+name: Test - Simple Echo -C ARG -- FILE_8
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_8.sh") <(sh -c "tests/tests_suite/files_sh/file_8.sh")"
+---
+name: Test - Simple Echo -C ARG -- FILE_9
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_9.sh") <(sh -c "tests/tests_suite/files_sh/file_9.sh")"
+---
+name: Test - Simple Echo -C ARG - FILE_10
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_10.sh") <(sh -c "tests/tests_suite/files_sh/file_10.sh")"
+---
+name: Test - Simple Echo -C ARG - FILE_11
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_11.sh") <(sh -c "tests/tests_suite/files_sh/file_11.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_12
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_12.sh") <(sh -c "tests/tests_suite/files_sh/file_12.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_13
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_13.sh") <(sh -c "tests/tests_suite/files_sh/file_13.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_15
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_15.sh") <(sh -c "tests/tests_suite/files_sh/file_15.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_16
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_16.sh") <(sh -c "tests/tests_suite/files_sh/file_16.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_17
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_17.sh") <(sh -c "tests/tests_suite/files_sh/file_17.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_18
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_18.sh") <(sh -c "tests/tests_suite/files_sh/file_18.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_19
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_19.sh") <(sh -c "tests/tests_suite/files_sh/file_19.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_20
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_20.sh") <(sh -c "tests/tests_suite/files_sh/file_20.sh")"
+---
+name: Test - Args Echo -C ARG - FILE_21
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_21.sh") <(sh -c "tests/tests_suite/files_sh/file_21.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_22
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_22.sh") <(sh -c "tests/tests_suite/files_sh/file_22.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_23
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_23.sh") <(sh -c "tests/tests_suite/files_sh/file_23.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_24
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_24.sh") <(sh -c "tests/tests_suite/files_sh/file_24.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_25
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_25.sh") <(sh -c "tests/tests_suite/files_sh/file_25.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_26
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_26.sh") <(sh -c "tests/tests_suite/files_sh/file_26.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_27
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_27.sh") <(sh -c "tests/tests_suite/files_sh/file_27.sh")"
+---
+name: Test - Args Quotes Echo -C ARG - FILE_28
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_28.sh") <(sh -c "tests/tests_suite/files_sh/file_28.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_29
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_29.sh") <(sh -c "tests/tests_suite/files_sh/file_29.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_30
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_30.sh") <(sh -c "tests/tests_suite/files_sh/file_30.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_31
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_31.sh") <(sh -c "tests/tests_suite/files_sh/file_31.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_32
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_32.sh") <(sh -c "tests/tests_suite/files_sh/file_32.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_33
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_33.sh") <(sh -c "tests/tests_suite/files_sh/file_33.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_34
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_34.sh") <(sh -c "tests/tests_suite/files_sh/file_34.sh")"
+---
+name: Test - Multiple Echo -C ARG - FILE_35
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_35.sh") <(sh -c "tests/tests_suite/files_sh/file_35.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_36
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_36.sh") <(sh -c "tests/tests_suite/files_sh/file_36.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_37
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_37.sh") <(sh -c "tests/tests_suite/files_sh/file_37.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_38
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_38.sh") <(sh -c "tests/tests_suite/files_sh/file_38.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_39
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_39.sh") <(sh -c "tests/tests_suite/files_sh/file_39.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_40
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_40.sh") <(sh -c "tests/tests_suite/files_sh/file_40.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_41
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_41.sh") <(sh -c "tests/tests_suite/files_sh/file_41.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_42
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_42.sh") <(sh -c "tests/tests_suite/files_sh/file_42.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_43
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_43.sh") <(sh -c "tests/tests_suite/files_sh/file_43.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_44
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_44.sh") <(sh -c "tests/tests_suite/files_sh/file_44.sh")"
+---
+name: Test - Multiple Args Echo -C ARG - FILE_45
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_45.sh") <(sh -c "tests/tests_suite/files_sh/file_45.sh")"
+---
+name: Test - Random Echo -C ARG - FILE_46
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_46.sh") <(sh -c "tests/tests_suite/files_sh/file_46.sh")"
+---
+name: Test - Random Echo -C ARG - FILE_47
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_47.sh") <(sh -c "tests/tests_suite/files_sh/file_47.sh")"
+---
+name: Test - Random Echo -C ARG - FILE_48
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_48.sh") <(sh -c "tests/tests_suite/files_sh/file_48.sh")"
+---
+name: Test - Random Test -C ARG - FILE_49
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_49.sh") <(sh -c "tests/tests_suite/files_sh/file_49.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_50
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_50.sh") <(sh -c "tests/tests_suite/files_sh/file_50.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_51
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_51.sh") <(sh -c "tests/tests_suite/files_sh/file_51.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_52
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_52.sh") <(sh -c "tests/tests_suite/files_sh/file_52.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_53
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_53.sh") <(sh -c "tests/tests_suite/files_sh/file_53.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_54
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_54.sh") <(sh -c "tests/tests_suite/files_sh/file_54.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_56
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_56.sh") <(sh -c "tests/tests_suite/files_sh/file_56.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_57
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_57.sh") <(sh -c "tests/tests_suite/files_sh/file_57.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_58
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_58.sh") <(sh -c "tests/tests_suite/files_sh/file_58.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_59
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_59.sh") <(sh -c "tests/tests_suite/files_sh/file_59.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_60
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_60.sh") <(sh -c "tests/tests_suite/files_sh/file_60.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_61
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_61.sh") <(sh -c "tests/tests_suite/files_sh/file_61.sh")"
+---
+name: Test - Quotes Echo -C ARG - FILE_62
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_62.sh") <(sh -c "tests/tests_suite/files_sh/file_62.sh")"
+---
+name: Test - Quote Backslash -C ARG - FILE_63
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_63.sh") <(sh -c "tests/tests_suite/files_sh/file_63.sh")"
+---
+name: Test - backslash before quote -C ARG - FILE_64
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_64.sh") <(sh -c "tests/tests_suite/files_sh/file_64.sh")"
+---
+name: Test - backslash newline -C ARG - FILE_65
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_65.sh") <(sh -c "tests/tests_suite/files_sh/file_65.sh")"
+---
+name: Test - echo -n test -C ARG - FILE_66
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_66.sh") <(sh -c "tests/tests_suite/files_sh/file_66.sh")"
+---
+name: Test - backslash_at_end -C ARG - FILE_69
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_69.sh") <(sh -c "tests/tests_suite/files_sh/file_69.sh")"
+---
+name: Test - backslash_at_end -C ARG - FILE_70
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_70.sh") <(sh -c "tests/tests_suite/files_sh/file_70.sh")"
+---
+name: Test - backslash_at_end -C ARG - FILE_71
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_71.sh") <(sh -c "tests/tests_suite/files_sh/file_71.sh")"
+stderr: "ls: cannot access ' ': No such file or directory\nls: cannot access ' ': No such file or directory\n"
+---
+name: Test - backslash_at_end -C ARG - FILE_73
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_73.sh") <(sh -c "tests/tests_suite/files_sh/file_73.sh")"
+---
+name: Test - backslash_at_end -C ARG - FILE_74
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_74.sh") <(sh -c "tests/tests_suite/files_sh/file_74.sh")"
+stderr: "ls: cannot access '\\oui\\': No such file or directory\nls: cannot access '\\oui\\': No such file or directory\n"
+---
+name: Test - echo_-n -C ARG - FILE_76
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_76.sh") <(sh -c "tests/tests_suite/files_sh/file_76.sh")"
+---
+name: Test - echo_hard1 -C ARG - FILE_78
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_78.sh") <(sh -c "tests/tests_suite/files_sh/file_78.sh")"
+---
+name: Test - echo_hard2 -C ARG - FILE_79
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_79.sh") <(sh -c "tests/tests_suite/files_sh/file_79.sh")"
+---
+name : Test - File with Comment - -C ARG - FILE_101
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_101.sh") <(sh -c "tests/tests_suite/files_sh/file_101.sh")"
+---
+name : Test - Shebang -C ARG
+cmd : builddir/42sh -c "#!/bin/zsh echo bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name : Test - Shebang -C ARG
+cmd : builddir/42sh -c "#!/bin/zsh echo -e bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name : Test - Shebang -C ARG
+cmd : builddir/42sh -c "#!/bin/zsfdsqgsdfdsqqdsfdsfh echo bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name : Test - Shebang -C ARG
+cmd : builddir/42sh -c "#!/ echo bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name : Test - Shebang -C ARG
+cmd : builddir/42sh -c "#!/bin/sh echo bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name: Test - backslash newline - NO EXT FILE - FILE_65
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_65") <(sh -c "tests/tests_suite/files_sh/file_65")"
+---
+name: Test - echo -n test - NO EXT FILE - FILE_66
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_66") <(sh -c "tests/tests_suite/files_sh/file_66")"
+---
+name: Test - backslash_at_end - NO EXT FILE - FILE_69
+cmd: bash -c "diff <(builddir/42sh -c "tests/tests_suite/files_sh/file_69") <(sh -c "tests/tests_suite/files_sh/file_69")"
+---
+name : Test - -C ARG
+cmd : builddir/42sh -c "echo bonjour"
+status : 0
+stdout: "bonjour\n"
+---
+name : Test - Dot - First - FILE_102
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_102) <(sh tests/tests_suite/files_sh/file_102)"
+---
+name : Test - Export - First - FILE_103
+cmd: bash -c "diff <(builddir/42sh tests/tests_suite/files_sh/file_103) <(sh tests/tests_suite/files_sh/file_103)"
+---
+name : Test - Reading from STDIN - 1
+cmd : bash -c "diff <(builddir/42sh < tests/tests_suite/files_sh/file_2.sh) <(sh < tests/tests_suite/files_sh/file_2.sh)"
+---
+name : Test - Reading from STDIN - 2
+cmd : bash -c "diff <(builddir/42sh < tests/tests_suite/files_sh/file_3) <(sh < tests/tests_suite/files_sh/file_3)"
+---
+name : Test - Reading from STDIN - 3
+cmd : bash -c "diff <(builddir/42sh < tests/tests_suite/files_sh/file_4.sh) <(sh < tests/tests_suite/files_sh/file_4.sh)"
+---
+name : Test - Reading from STDIN - 4
+cmd : bash -c "diff <(builddir/42sh < tests/tests_suite/files_sh/file_5.sh) <(sh < tests/tests_suite/files_sh/file_5.sh)"
+---
+name : Test - Reading from STDIN - ERROR NO SUCH FILE - 1
+cmd : builddir/42sh < tests/tests_suite/files_sh/file_5
+stderr: "/bin/sh: 1: cannot open tests/tests_suite/files_sh/file_5: No such file\n"
+status : 2
+---
+name : Test - Coucou - Dementor3-1
+cmd : ./builddir/42sh -c "echo coucou;"
+stdout : "coucou\n"
+status : 0
+---
+name : Test - Coucou - Dementor3-2
+cmd : ./builddir/42sh -c "echo coucou toi;"
+stdout : "coucou toi\n"
+status : 0
+---
+name : Test - Coucou - Dementor3-3
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_4.sh
+stdout : "Bonjour\n"
+status : 0
+---
+name : Test - echo -e without opt - Dementor3-4
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_77.sh
+stdout : "\n"
+status : 0
+---
+name : Test - echo -e without opt - Dementor3-5
+cmd : ./builddir/42sh tests/tests_suite/files_sh/echo_e
+stdout : "\n"
+status : 0
+---
+name : Test - echo_if - Dementor3-6
+cmd : ./builddir/42sh -c "if echo oui; then echo thimot; fi"
+stdout : "oui\nthimot\n"
+status : 0
+---
+name : Test - echo_if - Dementor3-7
+cmd : ./builddir/42sh tests/tests_suite/files_sh/file_90.sh
+stdout : "oui\nthimot\n"
+status : 0
+---
+name : Test - echo_if - Dementor3-8
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_90.sh
+stdout : "oui\nthimot\n"
+status : 0
+---
+name : Test - echo_if_else - Dementor3-9
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_93.sh
+stdout : "oui\ntrue\n"
+status : 0
+---
+name : Test - echo_if_else - Dementor3-10
+cmd : ./builddir/42sh -c "if false; then  if true; then echo oui; fi else  if true; then echo non; fi fi"
+stdout : "non\n"
+status : 0
+---
+name : Test - echo_if_else - Dementor3-11
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_97.sh
+stdout : "non\n"
+status : 0
+---
+name : Test - echo_error - Dementor3-12
+cmd : ./builddir/42sh < tests/tests_suite/files_sh/file_80.sh
+stderr : "42sh: failed to exec command: No such file or directory\n"
+status : 127
+---
+name : Test - echo_error - Dementor3-13
+cmd : ./builddir/42sh -c "ech oui;"
+stderr : "42sh: failed to exec command: No such file or directory\n"
+status : 127

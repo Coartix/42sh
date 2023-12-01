@@ -1,0 +1,353 @@
+name : Test1 - bad_if_no_separator'
+cmd : . tests/tests_suite/argument_test/test1; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2
+---
+name : Test2 - bad_if_no_condition'
+cmd : . tests/tests_suite/argument_test/test2; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test3 - bad_if_no_second_operator'
+cmd : . tests/tests_suite/argument_test/test3; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test4 - simple_if
+cmd : . tests/tests_suite/argument_test/test4; ./builddir/42sh -c "$comd"
+stdout : "toto\ntiti\n"
+stderr : ""
+status : 0
+
+---
+name : Test5 - exit
+cmd : . tests/tests_suite/argument_test/test5; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : ""
+status : 3
+
+---
+name : Test6 - exit
+cmd : . tests/tests_suite/argument_test/test6; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test7 - exit
+cmd : . tests/tests_suite/argument_test/test7; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : ""
+status : 0
+
+---
+name : Test8 - exit
+cmd : . tests/tests_suite/argument_test/test8; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : ""
+status : 0
+
+---
+name : Test9 - cd
+cmd : . tests/tests_suite/argument_test/test9; ./builddir/42sh -c "$comd"
+stdout : "/tmp\n"
+stderr : ""
+status : 0
+
+---
+name : Test10 - cd
+cmd : . tests/tests_suite/argument_test/test10; ./builddir/42sh -c "$comd"
+stdout : "/tmp\n/\n/\n"
+stderr : ""
+status : 0
+
+---
+name : Test11 - cd
+cmd : . tests/tests_suite/argument_test/test11; ./builddir/42sh -c "$comd"
+stdout : "/tmp\n/tmp/subdir\n/tmp\n"
+stderr : ""
+status : 0
+
+---
+name : Test12 - cd
+cmd : . tests/tests_suite/argument_test/test12; ./builddir/42sh -c "$comd"
+stdout : "/\n"
+stderr : "cd: nonexistent: No such file or directory\n"
+status : 0
+
+---
+name : Test13 - cd
+cmd : . tests/tests_suite/argument_test/test13; ./builddir/42sh -c "$comd"
+stdout : "/\n"
+stderr : "cd: /tmp/nonexistent: No such file or directory\n"
+status : 0
+
+---
+name : Test14 - if_elif_2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test14) <(sh < tests/tests_suite/argument_test/test14)"
+---
+name : Test15 - simple_if_multiple_newlines
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test15) <(sh < tests/tests_suite/argument_test/test15)"
+---
+name : Test16 - hard_if_2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test16) <(sh < tests/tests_suite/argument_test/test16)"
+---
+name : Test17 - hard_if_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test17) <(sh < tests/tests_suite/argument_test/test17)"
+---
+name : Test18 - simple_if_2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test18) <(sh < tests/tests_suite/argument_test/test18)"
+---
+name : Test19 - if_else_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test19) <(sh < tests/tests_suite/argument_test/test19)"
+---
+name : Test20 - simple_if_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test20) <(sh < tests/tests_suite/argument_test/test20)"
+---
+name : Test21 - command_with_arg
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test21) <(sh tests/tests_suite/argument_test/test21)"
+---
+name : Test22 - empty
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test22) <(sh tests/tests_suite/argument_test/test22)"
+---
+name : Test23 - multiple_command
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test23) <(sh tests/tests_suite/argument_test/test23)"
+---
+name : Test24 - script_1
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test24) <(sh tests/tests_suite/argument_test/test24)"
+---
+name : Test25 - script_2
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test25) <(sh tests/tests_suite/argument_test/test25)"
+---
+name : Test26 - script_3
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test26) <(sh tests/tests_suite/argument_test/test26)"
+---
+name : Test27 - script_4
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test27) <(sh tests/tests_suite/argument_test/test27)"
+---
+name : Test28 - script_5
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test28) <(sh tests/tests_suite/argument_test/test28)"
+---
+name : Test29 - simple_command
+cmd : bash -c "diff <( ./builddir/42sh tests/tests_suite/argument_test/test29) <(sh tests/tests_suite/argument_test/test29)"
+---
+name : Test30 - bad_if_elif_without_then
+cmd : . tests/tests_suite/argument_test/test30; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+---
+name : Test31 - bad_if_no_body
+cmd : . tests/tests_suite/argument_test/test31; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test32 - bad_if_no_condition
+cmd : . tests/tests_suite/argument_test/test32; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test33 - bad_if_no_fi
+cmd : . tests/tests_suite/argument_test/test33; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test34 - bad_if_no_second_operator
+cmd : . tests/tests_suite/argument_test/test34; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test35 - bad_if_no_separator
+cmd : . tests/tests_suite/argument_test/test35; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test36 - bad_if_no_then
+cmd : . tests/tests_suite/argument_test/test36; ./builddir/42sh -c "$comd"
+stderr : "Syntax error\n"
+status : 2
+
+---
+name : Test37 - command_multi_arg
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test37) <(sh < tests/tests_suite/argument_test/test37)"
+---
+name : Test38 - command_multi_arg2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test38) <(sh < tests/tests_suite/argument_test/test38)"
+---
+name : Test39 - command_with_arg
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test39) <(sh < tests/tests_suite/argument_test/test39)"
+---
+name : Test40 - command_multi_arg3
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test40) <(sh < tests/tests_suite/argument_test/test40)"
+stderr : "/bin/ls: invalid option -- '@'\nTry '/bin/ls --help' for more information.\n/bin/ls: invalid option -- '@'\nTry '/bin/ls --help' for more information.\n"
+---
+name : Test41 - command_with_arg1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test41) <(sh < tests/tests_suite/argument_test/test41)"
+stderr : "/bin/ls: cannot access '/tmp/ex/tests/architecture': No such file or directory\n/bin/ls: cannot access '/tmp/ex/tests/architecture': No such file or directory\n"
+---
+name : Test42 - command_with_arg2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test42) <(sh < tests/tests_suite/argument_test/test42)"
+stderr : "/bin/ls: cannot access '/clem': No such file or directory\n/bin/ls: cannot access '/clem': No such file or directory\n"
+---
+name : Test43 - double_tab
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test43) <(sh < tests/tests_suite/argument_test/test43)"
+---
+name : Test44 - exit_code
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test44) <(sh < tests/tests_suite/argument_test/test44)"
+stderr : "/bin/ls: unrecognized option '--42sh'\nTry '/bin/ls --help' for more information.\n/bin/ls: unrecognized option '--42sh'\nTry '/bin/ls --help' for more information.\n"
+---
+name : Test45 - long_argument
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test45) <(sh < tests/tests_suite/argument_test/test45)"
+---
+name : Test46 - long_command
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test46) <(sh < tests/tests_suite/argument_test/test46)"
+
+---
+name : Test47 - basic_quote1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test47) <(sh < tests/tests_suite/argument_test/test47)"
+---
+name : Test48 - all_quotes
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test48) <(sh < tests/tests_suite/argument_test/test48)"
+---
+name : Test49 - all_quote
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test49) <(sh < tests/tests_suite/argument_test/test49)"
+---
+name : Test50 - basic_quote
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test50) <(sh < tests/tests_suite/argument_test/test50)"
+---
+name : Test51 - basic_quote
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test51 | cat -e) <(bash < tests/tests_suite/argument_test/test51 | cat -e)"
+---
+name : Test52 - dollar_quote
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test52) <(sh < tests/tests_suite/argument_test/test52)"
+---
+name : Test53 - all_list_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test53) <(sh < tests/tests_suite/argument_test/test53)"
+---
+name : Test54 - and_or_list_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test54) <(sh < tests/tests_suite/argument_test/test54)"
+---
+name : Test55 - and_or_list2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test55) <(sh < tests/tests_suite/argument_test/test55)"
+---
+name : Test56 - seq_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test56) <(sh < tests/tests_suite/argument_test/test56)"
+---
+name : Test57 - seq_2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test57) <(sh < tests/tests_suite/argument_test/test57)"
+---
+name : Test58 - seq_3
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test58) <(sh < tests/tests_suite/argument_test/test58)"
+---
+name : Test59 - seq_4
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test59) <(sh < tests/tests_suite/argument_test/test59)"
+
+---
+name : Test60 - sleeping_on_quotes
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test60.sh) <(sh < tests/tests_suite/argument_test/test60.sh)"
+
+---
+name : Test61 - script_2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test61) <(sh < tests/tests_suite/argument_test/test61)"
+---
+name : Test62 - echo_en
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test62) <(bash < tests/tests_suite/argument_test/test62)"
+---
+name : Test63 - echo_big_arg
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test63) <(sh < tests/tests_suite/argument_test/test63)"
+
+---
+name : Test64 - non_existant
+cmd : . tests/tests_suite/argument_test/test64; ./builddir/42sh -c "$comd"
+stderr : "42sh: failed to exec command: No such file or directory\n"
+status : 127
+
+---
+name : Test65 - cd_hard
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test65) <(sh < tests/tests_suite/argument_test/test65)"
+
+---
+name : Test66 - echo -ne hello
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test66) <(bash < tests/tests_suite/argument_test/test66)"
+
+---
+name : Test67 - echo_E_option1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test67) <(bash < tests/tests_suite/argument_test/test67)"
+---
+name : Test68 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test68) <(bash < tests/tests_suite/argument_test/test68)"
+---
+name : Test69 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test69) <(bash < tests/tests_suite/argument_test/test69)"
+---
+name : Test70 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test70) <(bash < tests/tests_suite/argument_test/test70)"
+---
+name : Test71 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test71) <(bash < tests/tests_suite/argument_test/test71)"
+---
+name : Test72 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test72) <(bash < tests/tests_suite/argument_test/test72)"
+---
+name : Test73 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test73) <(bash < tests/tests_suite/argument_test/test73)"
+---
+name : Test74 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test74) <(bash < tests/tests_suite/argument_test/test74)"
+---
+name : Test75 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test75) <(bash < tests/tests_suite/argument_test/test75)"
+---
+name : Test76 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test76) <(bash < tests/tests_suite/argument_test/test76)"
+---
+name : Test77 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test77) <(bash < tests/tests_suite/argument_test/test77)"
+---
+name : Test78 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test78) <(bash < tests/tests_suite/argument_test/test78)"
+---
+name : Test79 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test79) <(bash < tests/tests_suite/argument_test/test79)"
+---
+name : Test80 - echo
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test80) <(bash < tests/tests_suite/argument_test/test80)"
+---
+name : Test81 - script_3
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test81) <(sh < tests/tests_suite/argument_test/test81)"
+---
+name : Test82 - if_pipe_1
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test82) <(sh < tests/tests_suite/argument_test/test82)"
+---
+name : Test83 - if_pipe2
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test83) <(sh < tests/tests_suite/argument_test/test83)"
+---
+name : Test84 - if_pipe3
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test84) <(sh < tests/tests_suite/argument_test/test84)"
+---
+name : Test85 - long_pipe
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test85) <(sh < tests/tests_suite/argument_test/test85)"
+---
+name : Test86 - multi_pipes
+cmd : bash -c "diff <( ./builddir/42sh < tests/tests_suite/argument_test/test86) <(sh < tests/tests_suite/argument_test/test86)"
+---
+name : Test87 - bad_pipe
+cmd : . tests/tests_suite/argument_test/test87; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2
+---
+name : Test88 - bad_ending_pipe
+cmd : . tests/tests_suite/argument_test/test88; ./builddir/42sh -c "$comd"
+stdout : ""
+stderr : "Syntax error\n"
+status : 2

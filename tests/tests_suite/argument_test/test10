@@ -1,0 +1,5 @@
+comd="cd /
+cd /tmp
+/bin/pwd
+cd -
+/bin/pwd"

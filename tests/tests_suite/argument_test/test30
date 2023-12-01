@@ -1,0 +1,1 @@
+comd="if /bin/false; then\n/bin/echo loupe\nelif /bin/true\n/bin/echo blork\nfi"

@@ -1,0 +1,5 @@
+if /bin/echo toto; then
+/bin/echo titi
+/bin/echo tata;
+/bin/echo tutu
+fi

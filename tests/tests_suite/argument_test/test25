@@ -1,0 +1,5 @@
+if /bin/echo this is _the_ test; then
+/bin/echo good
+else
+/bin/echo bad
+fi

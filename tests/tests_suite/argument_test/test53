@@ -1,0 +1,1 @@
+/bin/echo toto || /bin/echo tutu; /bin/echo toto && /bin/echo tutu; /bin/echo blablabla c est la fete au village || /bin/echo /bin/true

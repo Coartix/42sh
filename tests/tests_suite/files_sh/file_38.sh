@@ -1,0 +1,1 @@
+echo -n 'You are my fingers. Fingers can use keyboard to write tests';echo -n 'You are my fingers. Fingers can use keyboard to write tests';echo -n 'You are my fingers. Fingers can use keyboard to write tests';echo -n 'You are my fingers. Fingers can use keyboard to write tests';echo -n 'You are my fingers. Fingers can use keyboard to write tests';

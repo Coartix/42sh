@@ -1,0 +1,4 @@
+if /bin/echo toto; then
+    /bin/echo bon ca va pour cette fois; /bin/find tests/ | /bin/sort
+fi
+/bin/echo res

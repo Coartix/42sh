@@ -1,0 +1,1 @@
+echo -e \\d\\g\\h\\i\\j\\k\\l\\m\\n\\o\\p\\q\\s\\t\\u\\w\\y\\z

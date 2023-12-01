@@ -1,0 +1,1 @@
+echo "test\o"truc

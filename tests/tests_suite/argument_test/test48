@@ -1,0 +1,5 @@
+/bin/echo '"'
+/bin/echo '\\'
+/bin/echo ''''
+/bin/echo "'"
+/bin/echo "\"" \" \' a b c d \\\\ "| \" "

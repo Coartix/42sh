@@ -1,0 +1,1 @@
+echo \otest truc

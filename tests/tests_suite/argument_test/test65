@@ -1,0 +1,14 @@
+cd /tmp
+/bin/pwd
+/bin/mkdir -p /tmp/subdir/subsubdir
+/bin/mkdir -p /tmp/subdir2/subsubdir
+/bin/mkdir -p /tmp/subdir3
+cd subdir
+/bin/pwd
+cd ../subdir2/subsubdir
+/bin/pwd
+cd -
+/bin/pwd
+cd ../../tmp/subdir3
+/bin/pwd
+/bin/rm -r /tmp/subdir /tmp/subdir2 /tmp/subdir3

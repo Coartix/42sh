@@ -1,0 +1,1 @@
+echo hugo'c'\'est un b\g

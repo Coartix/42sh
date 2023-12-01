@@ -1,0 +1,1 @@
+comd="/bin/echo pouet | /bin/echo blork | /bin/cat | /bin/echo kid | /bin/cat ||| /bin/echo paddle"

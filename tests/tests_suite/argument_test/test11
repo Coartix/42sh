@@ -1,0 +1,9 @@
+comd="cd /tmp
+/bin/pwd
+/bin/mkdir -p /tmp/subdir/subsubdir
+/bin/mkdir -p /tmp/subdir2
+cd subdir
+/bin/pwd
+cd ..
+/bin/pwd
+/bin/rm -r /tmp/subdir /tmp/subdir2"

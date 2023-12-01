@@ -1,0 +1,5 @@
+if /bin/true; then
+    /bin/echo tata;
+    /bin/echo toto;
+    /bin/echo tata;
+fi | /bin/cat -e

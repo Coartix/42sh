@@ -1,0 +1,13 @@
+if /bin/false; then
+/bin/echo moue
+
+/bin/echo tata
+else
+if /bin/false; then
+/bin/echo tutu
+
+elif /bin/true; then
+
+/bin/echo sakebon le 42sh
+fi
+fi

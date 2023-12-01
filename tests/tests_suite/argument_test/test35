@@ -1,0 +1,2 @@
+comd="if /bin/true then\n/bin/echo lol
+fi"

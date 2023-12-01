@@ -1,0 +1,13 @@
+if /bin/true; then
+  /bin/echo toto
+  /bin/echo tata
+  /bin/echo toto
+  /bin/echo tata
+  /bin/echo toto
+fi | if /bin/true; then
+    /bin/echo toto
+    /bin/cat -e;
+    /bin/echo tata
+fi | if /bin/true; then
+    /bin/cat -e
+fi

@@ -1,0 +1,7 @@
+if /bin/echo 1; then if /bin/echo 2; then /bin/echo toto
+else
+	/bin/echo lol
+fi
+else
+/bin/echo not ok
+fi

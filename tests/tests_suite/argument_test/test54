@@ -1,0 +1,1 @@
+/bin/true && /bin/echo 1 || /bin/false || /bin/echo 2 && /bin/false || /bin/true && /bin/echo 3 || /bin/echo 4 || /bin/echo 5 && /bin/echo 6 || /bin/true && /bin/echo 7

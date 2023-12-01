@@ -1,0 +1,1 @@
+/bin/ls -a -F /tests | /bin/cat -e | /bin/grep ^drw | /bin/tail -4

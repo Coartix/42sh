@@ -1,0 +1,5 @@
+if /bin/false; then
+/bin/echo momo mama mimi
+elif /bin/true; then
+/bin/echo seblu sterck ed alain
+fi

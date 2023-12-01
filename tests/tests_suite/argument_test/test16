@@ -1,0 +1,16 @@
+if /bin/false; then
+/bin/echo moue
+
+/bin/echo tata
+elif /bin/true; then
+
+/bin/echo cool le 42sh
+
+if /bin/true; then
+
+/bin/echo vous ne trouvez pas
+else
+
+/bin/echo moue
+fi
+fi

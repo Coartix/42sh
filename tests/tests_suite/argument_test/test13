@@ -1,0 +1,3 @@
+comd="cd /
+cd /tmp/nonexistent
+/bin/pwd"

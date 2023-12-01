@@ -1,0 +1,11 @@
+if /bin/echo ok
+then
+/bin/echo why
+if  /bin/echo ok2; then
+/bin/echo why2
+else
+/bin/echo hmmmmm
+fi
+else
+/bin/echo not ok
+fi

@@ -1,0 +1,1 @@
+/bin/echo 1 && /bin/echo 2 && /bin/false && /bin/echo 3
